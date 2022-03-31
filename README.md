@@ -26,7 +26,7 @@ Calculadora desenvolvida na disciplina de Estrutura de Dados I da UFERSA.
   <li>Funcionar por meio dos botões em tela</li>
   <br><br>
  <h2>Classes-entidade e seus atributos</h2>
- <img src='img/image03.jpg' />
+ <img src='img/image03.png' />
  <h2>Arquitetura</h2>
   <li>Model-view-controller (MVC)</li>
  <br><br> 
