@@ -8,9 +8,10 @@ Calculadora desenvolvida na disciplina de Estrutura de Dados I da UFERSA.
 <h2>Objetivos</h2>
 <br>
 <ul>
-  <li>A UFERSA-Calc visa ser um aplicativo simples e de fácil uso para alunos do ensino médio, portando apenas as funcionalidades que são adequadas para os estudantes que se encontram nesse nível de ensino. </li>
+  <li>Ser um aplicativo simples e de fácil uso para alunos do ensino médio, portando apenas as funcionalidades que são adequadas para os estudantes que se encontram nesse nível de ensino. </li>
   <li>Ser uma ferramenta que facilite a correção de atividades por parte dos alunos do ensino médio.</li>
-  <li>Auxiliar os alunos na assimilação de algumas regras mais utilizada na matemática do ensino medio</li>
+  <li>Auxiliar os alunos na assimilação de algumas regras mais utilizada na matemática do ensino médio</li>
+  <li>Aumentar o número de funções matemáticas suportadas pela UFERSA-Calc a longo prazo</li>
  </ul>
  <br><br>
  <h2>Descrição de funcionalidade funcionalidade e recursos </h2>
