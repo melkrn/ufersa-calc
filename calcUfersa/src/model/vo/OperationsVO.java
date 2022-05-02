@@ -1,9 +1,9 @@
 package model.vo;
-
+import java.util.*;
 public class OperationsVO {
   private String _lastOperator;
   private String _lastNumber;
-  private List _operation;
+  private List<String> _operation;
 
 
   public String get_lastOperator() {
@@ -18,10 +18,10 @@ public class OperationsVO {
   public void set_lastNumber(String _lastNumber) {
     this._lastNumber = _lastNumber;
   }
-  public List get_operation() {
+  public List<String> get_operation() {
     return _operation;
   }
-  public void set_operation(List _operation) {
+  public void set_operation(List<String> _operation) {
     this._operation = _operation;
   }
 
