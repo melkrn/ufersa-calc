@@ -1,7 +1,15 @@
+
+/*------------PANELS ------------------*/
 #topPanel {
   -fx-background-color: linear-gradient( #1C9564 50%, #25838F);
   -fx-background-radius: 0px 0px 60px 60px;
 }
+
+#anchor {
+  -fx-background-color: #fff;
+}
+
+/*------------END PANELS ------------------*/
 /*-----------BUTTONS ------------------*/
 #numberButton {
   -fx-background-color: #DEE2F2;
@@ -43,14 +51,15 @@
   -fx-cursor: hand;
 }
 /*----------- END BUTTONS ------------------*/
-#anchor {
-  -fx-background-color: #fff;
-}
+
+/*----------- FIELDs --------------*/
 
 #displayField {
   -fx-background-color: transparent;
   -fx-font-size: 35px;
   -fx-font-weight: bold;
+  -fx-text-fill: #FFF;
+  -fx-alignment: center_right;
 }
 
 #resultField {
@@ -58,5 +67,8 @@
   -fx-min-height: 63px;
   -fx-font-size: 35px;
   -fx-font-weight: bold;
+  -fx-text-fill: #FFF;
   -fx-alignment: center_right;
 }
+
+/*----------- END FIELDs --------------*/

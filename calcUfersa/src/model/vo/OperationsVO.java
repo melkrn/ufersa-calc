@@ -1,9 +1,8 @@
 package model.vo;
-import java.util.*;
 public class OperationsVO {
-  private String _lastOperator;
-  private String _lastNumber;
-  private List<String> _operation;
+  private String _lastOperator = "";
+  private String _lastNumber = "";
+  private char[] _operation;
 
 
   public String get_lastOperator() {
@@ -18,11 +17,19 @@ public class OperationsVO {
   public void set_lastNumber(String _lastNumber) {
     this._lastNumber = _lastNumber;
   }
-  public List<String> get_operation() {
+  public char[] get_operation() {
     return _operation;
   }
-  public void set_operation(List<String> _operation) {
-    this._operation = _operation;
+  public void set_operation(String _operation) {
+
+    char [] caracteres = new char[_operation.length()];
+    int count = 0;
+    for (char letra : _operation.toCharArray()) {
+      caracteres[count] = letra;
+      count++;
+    }
+    System.out.println(caracteres[0]);
+    this._operation = caracteres;
   }
 
 }
