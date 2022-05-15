@@ -1,0 +1,74 @@
+
+/*------------PANELS ------------------*/
+#topPanel {
+  -fx-background-color: linear-gradient( #1C9564 50%, #25838F);
+  -fx-background-radius: 0px 0px 60px 60px;
+}
+
+#anchor {
+  -fx-background-color: #fff;
+}
+
+/*------------END PANELS ------------------*/
+/*-----------BUTTONS ------------------*/
+#numberButton {
+  -fx-background-color: #DEE2F2;
+  -fx-background-radius: 100%;
+  -fx-min-height: 88px;
+  -fx-min-width: 88px;
+  -fx-font-size: 40px;
+  -fx-font-weight: bold;
+  -fx-cursor: hand;
+}
+
+#numberButtongrey {
+  -fx-background-color: #A1B2B3;
+  -fx-background-radius: 100%;
+  -fx-min-height: 88px;
+  -fx-min-width: 88px;
+  -fx-font-size: 40px;
+  -fx-font-weight: bold;
+  -fx-cursor: hand;
+}
+
+#numberButtongreen {
+  -fx-background-color: #1C9564;
+  -fx-background-radius: 100%;
+  -fx-min-height: 88px;
+  -fx-min-width: 88px;
+  -fx-font-size: 40px;
+  -fx-font-weight: bold;
+  -fx-cursor: hand;
+}
+
+#functionButton {
+  -fx-background-color: #1C9564;
+  -fx-background-radius: 25px;
+  -fx-min-height: 224px;
+  -fx-min-width: 88px;
+  -fx-font-size: 40px;
+  -fx-font-weight: bold;
+  -fx-cursor: hand;
+}
+/*----------- END BUTTONS ------------------*/
+
+/*----------- FIELDs --------------*/
+
+#displayField {
+  -fx-background-color: transparent;
+  -fx-font-size: 35px;
+  -fx-font-weight: bold;
+  -fx-text-fill: #FFF;
+  -fx-alignment: center_right;
+}
+
+#resultField {
+  -fx-min-width: 556px;
+  -fx-min-height: 63px;
+  -fx-font-size: 35px;
+  -fx-font-weight: bold;
+  -fx-text-fill: #FFF;
+  -fx-alignment: center_right;
+}
+
+/*----------- END FIELDs --------------*/

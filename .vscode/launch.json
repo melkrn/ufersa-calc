@@ -1,0 +1,45 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch CalculadoraUfersa",
+            "request": "launch",
+            "mainClass": "CalculadoraUfersa",
+            "projectName": "ProjetoED1_97c4d383",
+            "vmArgs": "--module-path \"C:/Users/Fabricio/Desktop/Projeto ED1/javafx-sdk-18.0.1/javafx-sdk-18.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Launch ComplexOp",
+            "request": "launch",
+            "mainClass": "model.bo.ComplexOp",
+            "projectName": "ProjetoED1_97c4d383"
+        },
+        {
+            "type": "java",
+            "name": "Launch Display",
+            "request": "launch",
+            "mainClass": "model.bo.Display",
+            "projectName": "ProjetoED1_97c4d383"
+        },
+        {
+            "type": "java",
+            "name": "Launch Operations",
+            "request": "launch",
+            "mainClass": "model.bo.Operations",
+            "projectName": "ProjetoED1_97c4d383"
+        }
+    ]
+}
