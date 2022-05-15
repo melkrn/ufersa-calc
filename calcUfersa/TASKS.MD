@@ -4,11 +4,11 @@
 ### Calculadora simples
 [x] Pegar os valores do display e realizar as operaçoes ao apertar em *"="*
 [] Pegar os valores do display e realizar as operaçoes ao apertar uma segunda vez no operador
-[] Funcao para apagar o display completamente
-[] Funcao para apagar por cada indice do display
+[x] Funcao para apagar o display completamente
+[x] Funcao para apagar por cada indice do display
 [] Imprimir o resultado na label criada com id: *resultField*
 [] Montar o histórico de visualização de operaçoes
-[] Limitar quantidade de numeros no display ( está ultrapassando o limite visualizável)
+[x] Limitar quantidade de numeros no display ( está ultrapassando o limite visualizável)
 
 
 ### Calculadora com funçoes

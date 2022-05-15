@@ -79,6 +79,7 @@ public class calcController {
   public void initialize(){
     // Seta uma unica vez ao iniciar a calculadora
     /* --- EVENTOS DE BOTOES ------*/
+    Display.clearDisplay(btn_clear, displayField);
     Display.setNumberToDisplay(btn0, displayField, "0");
     Display.setNumberToDisplay(btn1, displayField, "1");
     Display.setNumberToDisplay(btn2, displayField, "2");
@@ -96,6 +97,7 @@ public class calcController {
     Display.setNumberToDisplay(btn_mult, displayField, "x");
     Display.setNumberToDisplay(btn_div, displayField, "/");
     Display.setNumberToDisplay(btn_porcentagem, displayField, "%");
+    Display.erase(btn_erase, displayField);
  /* --- END EVENTOS DE BOTOES ------*/
   }
 
