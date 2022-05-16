@@ -11,10 +11,9 @@ public class Operations<VO extends OperationsVO> {
   static OperationsVO op = new OperationsVO();
   public static void main(String[] args) { // TESTES
     System.out.println("@>SETOPERATIONS");
-    String test = "2&2";
-    System.out.println("@>>");
-    System.out.println(isOperation("/"));
-  
+    // String test = "2&2";
+    // System.out.println("@>>");
+    // System.out.println(isOperation("/"));
     
   }
 
