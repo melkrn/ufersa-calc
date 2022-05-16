@@ -2,17 +2,21 @@
 
 
 ### Calculadora simples
+
 [x] Pegar os valores do display e realizar as operaçoes ao apertar em *"="*
-[] Pegar os valores do display e realizar as operaçoes ao apertar uma segunda vez no operador
+[x] Limitar quantidade de numeros no display ( está ultrapassando o limite visualizável)
 [x] Funcao para apagar o display completamente
 [x] Funcao para apagar por cada indice do display
 [] Imprimir o resultado na label criada com id: *resultField*
 [] Montar o histórico de visualização de operaçoes
-[x] Limitar quantidade de numeros no display ( está ultrapassando o limite visualizável)
+[] Criar metodo de leitura de arquivos para realizar expressões
+[] Criar metodo de impressao de arquivos (Usar histórico de arquivos)
+[] Criar nossas próprias Listas
 
 
 ### Calculadora com funçoes
 
-[] Verificar melhor forma de executar as funcoes fazendo uso do display
-[] Montar histórico das funcoes realizadas para chegar ao resultado
-[] Procurar alguma lib que possa ajudar o processo
+[] Criar interface da calculadora complexa
+[] Montar histórico das funcoes realizadas para chegar ao resultado (Procurar alguma lib que possa ajudar o processo)
+[] Criar metodo de busca das funcoes
+[] Realizar ordenação das funcoes da complexa com algoritmo

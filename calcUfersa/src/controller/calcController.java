@@ -94,9 +94,9 @@ public class calcController {
     Display.setNumberToDisplay(btn_point, displayField, ".");
     Display.setNumberToDisplay(btn_soma, displayField, "+");
     Display.setNumberToDisplay(btn_sub, displayField, "-");
-    Display.setNumberToDisplay(btn_mult, displayField, "x");
+    Display.setNumberToDisplay(btn_mult, displayField, "*");
     Display.setNumberToDisplay(btn_div, displayField, "/");
-    Display.setNumberToDisplay(btn_porcentagem, displayField, "%");
+    /* Display.setNumberToDisplay(btn_porcentagem, displayField, "%"); Precisa da funcao de porcentagem*/
     Display.erase(btn_erase, displayField);
  /* --- END EVENTOS DE BOTOES ------*/
   }
