@@ -44,41 +44,42 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="801.0" prefWidth="452.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.calcController">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.calcController">
   <children>
-    <AnchorPane id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="801.0" prefWidth="545.0" stylesheets="@stylesheet/calcTop.css" VBox.vgrow="ALWAYS">
+    <AnchorPane id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="836.0" prefWidth="602.0" stylesheets="@stylesheet/calcTop.css" VBox.vgrow="ALWAYS">
          <children>
-            <Pane id="topPanel" prefHeight="258.0" prefWidth="468.0" stylesheets="@stylesheet/calcTop.css">
+            <Pane id="topPanel" prefHeight="271.0" prefWidth="641.0" stylesheets="@stylesheet/calcTop.css">
                <children>
-                  <Label id="resultField" alignment="TOP_RIGHT" layoutX="-117.0" layoutY="81.0" minWidth="425.0" prefHeight="63.0" prefWidth="425.0" stylesheets="@stylesheet/calcTop.css" text="lab" />
-                  <Label layoutX="30.0" layoutY="188.0" prefHeight="47.0" prefWidth="42.0" style="-fx-font-weight: bold; -fx-text-fill: #fff;" text="=">
+                  <TextField id="displayField" fx:id="displayField" layoutX="71.0" layoutY="174.0" prefHeight="63.0" prefWidth="556.0" stylesheets="@stylesheet/calcTop.css" />
+                  <Label id="resultField" fx:id="resultField" alignment="TOP_RIGHT" layoutX="71.0" layoutY="93.0" stylesheets="@stylesheet/calcTop.css" text="lab" />
+                  <Label layoutX="35.0" layoutY="166.0" prefHeight="37.0" prefWidth="33.0" style="-fx-font-weight: bold; -fx-text-fill: #fff;" text="=">
                      <font>
-                        <Font size="45.0" />
+                        <Font size="51.0" />
                      </font>
                   </Label>
-                  <TextField id="displayField" fx:id="displayField" layoutX="77.0" layoutY="182.0" prefHeight="55.0" prefWidth="333.0" stylesheets="@stylesheet/calcTop.css" />
+                  <ListView fx:id="historico" layoutX="409.0" layoutY="7.0" prefHeight="142.0" prefWidth="219.0" />
                </children></Pane>
-            <Button id="numberButton" fx:id="btn1" layoutX="126.0" layoutY="595.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="1" />
-            <Button id="numberButton" fx:id="btn2" layoutX="232.0" layoutY="595.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="2" />
-            <Button id="numberButton" fx:id="btn3" layoutX="338.0" layoutY="595.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="3" />
-            <Button id="numberButton" fx:id="btn0" layoutX="232.0" layoutY="699.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="0" />
-            <Button id="numberButton" fx:id="btn6" layoutX="338.0" layoutY="491.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="6" />
-            <Button id="numberButton" fx:id="btn5" layoutX="232.0" layoutY="491.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="5" />
-            <Button id="numberButton" fx:id="btn4" layoutX="126.0" layoutY="491.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="4" />
-            <Button id="numberButton" fx:id="btn8" layoutX="232.0" layoutY="387.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="8" />
-            <Button id="numberButton" fx:id="btn9" layoutX="338.0" layoutY="387.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="9" />
-            <Button id="numberButton" fx:id="btn7" layoutX="126.0" layoutY="387.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="7" />
-            <Button id="numberButtongrey" fx:id="btn_soma" layoutX="444.0" layoutY="595.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="+" />
-            <Button id="numberButtongrey" fx:id="btn_sub" layoutX="444.0" layoutY="491.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="-" />
-            <Button id="numberButtongrey" fx:id="btn_mult" layoutX="444.0" layoutY="387.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="x" />
-            <Button id="numberButtongrey" fx:id="btn_div" layoutX="444.0" layoutY="283.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="÷" />
-            <Button id="numberButtongrey" fx:id="btn_porcentagem" layoutX="338.0" layoutY="283.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="\%" />
-            <Button id="numberButtongrey" fx:id="btn_plusmin" layoutX="232.0" layoutY="283.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="±" />
-            <Button id="numberButtongrey" fx:id="btn_clear" layoutX="126.0" layoutY="283.0" mnemonicParsing="false" onAction="#clearDisplay" stylesheets="@stylesheet/calcTop.css" text="C" />
-            <Button id="numberButtongrey" fx:id="btn_erase" layoutX="126.0" layoutY="699.0" mnemonicParsing="false" onAction="#clearLastPositionDisplay" stylesheets="@stylesheet/calcTop.css" text="x" />
-            <Button id="numberButtongrey" fx:id="btn_point" layoutX="338.0" layoutY="699.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="," />
-            <Button id="numberButtongreen" fx:id="btn_equal" layoutX="444.0" layoutY="699.0" mnemonicParsing="false" onAction="#makeOperation" stylesheets="@stylesheet/calcTop.css" text="=" />
-            <Button id="functionButton" fx:id="btn_function" layoutX="14.0" layoutY="429.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="∑" />
+            <Button id="numberButton" fx:id="btn1" layoutX="152.0" layoutY="594.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="1" />
+            <Button id="numberButton" fx:id="btn2" layoutX="258.0" layoutY="592.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="2" />
+            <Button id="numberButton" fx:id="btn3" layoutX="364.0" layoutY="592.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="3" />
+            <Button id="numberButton" fx:id="btn0" layoutX="258.0" layoutY="698.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="0" />
+            <Button id="numberButton" fx:id="btn6" layoutX="364.0" layoutY="488.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="6" />
+            <Button id="numberButton" fx:id="btn5" layoutX="258.0" layoutY="488.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="5" />
+            <Button id="numberButton" fx:id="btn4" layoutX="152.0" layoutY="490.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="4" />
+            <Button id="numberButton" fx:id="btn8" layoutX="258.0" layoutY="384.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="8" />
+            <Button id="numberButton" fx:id="btn9" layoutX="364.0" layoutY="384.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="9" />
+            <Button id="numberButton" fx:id="btn7" layoutX="152.0" layoutY="384.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="7" />
+            <Button id="numberButtongrey" fx:id="btn_soma" layoutX="470.0" layoutY="594.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="+" />
+            <Button id="numberButtongrey" fx:id="btn_sub" layoutX="470.0" layoutY="488.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="-" />
+            <Button id="numberButtongrey" fx:id="btn_mult" layoutX="470.0" layoutY="384.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="x" />
+            <Button id="numberButtongrey" fx:id="btn_div" layoutX="470.0" layoutY="280.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="÷" />
+            <Button id="numberButtongrey" fx:id="btn_porcentagem" layoutX="364.0" layoutY="280.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="\%" />
+            <Button id="numberButtongrey" fx:id="btn_plusmin" layoutX="258.0" layoutY="280.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="±" />
+            <Button id="numberButtongrey" fx:id="btn_clear" layoutX="152.0" layoutY="280.0" minHeight="69.0" minWidth="75.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="75.0" stylesheets="@stylesheet/calcTop.css" text="C" />
+            <Button id="numberButtongrey" fx:id="btn_erase" layoutX="152.0" layoutY="698.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="x" />
+            <Button id="numberButtongrey" fx:id="btn_point" layoutX="364.0" layoutY="698.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="," />
+            <Button id="numberButtongreen" fx:id="btn_equal" layoutX="470.0" layoutY="698.0" mnemonicParsing="false" onAction="#makeOperation" stylesheets="@stylesheet/calcTop.css" text="=" />
+            <Button id="functionButton" fx:id="btn_function" layoutX="40.0" layoutY="428.0" mnemonicParsing="false" stylesheets="@stylesheet/calcTop.css" text="∑" />
          </children>
     </AnchorPane>
   </children>

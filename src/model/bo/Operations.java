@@ -23,7 +23,7 @@ public class Operations<VO extends OperationsVO> {
       ArrayList<String> operators = new ArrayList<String>(){{
         add("+");
         add("-");
-        add("x");
+        add("*");
         add("%");
         add("/");
       }};

@@ -3,6 +3,8 @@ package controller;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import model.bo.Display;
 import model.bo.Operations;
@@ -76,9 +78,16 @@ public class calcController {
   @FXML
   private TextField displayField;
 
+  @FXML
+  private Label resultField;
+
+  @FXML
+  private ListView historico;
+
   public void initialize(){
     // Seta uma unica vez ao iniciar a calculadora
     /* --- EVENTOS DE BOTOES ------*/
+    Display.clearDisplay(btn_clear, displayField);
     Display.setNumberToDisplay(btn0, displayField, "0");
     Display.setNumberToDisplay(btn1, displayField, "1");
     Display.setNumberToDisplay(btn2, displayField, "2");
@@ -93,9 +102,10 @@ public class calcController {
     Display.setNumberToDisplay(btn_point, displayField, ".");
     Display.setNumberToDisplay(btn_soma, displayField, "+");
     Display.setNumberToDisplay(btn_sub, displayField, "-");
-    Display.setNumberToDisplay(btn_mult, displayField, "x");
+    Display.setNumberToDisplay(btn_mult, displayField, "*");
     Display.setNumberToDisplay(btn_div, displayField, "/");
     Display.setNumberToDisplay(btn_porcentagem, displayField, "%");
+    Display.erase(btn_erase, displayField);
  /* --- END EVENTOS DE BOTOES ------*/
   }
 
@@ -103,14 +113,19 @@ public class calcController {
     
     OperationsVO op = new OperationsVO();
     op.set_operation(displayField.getText());
+    String ope = displayField.getText();
     Boolean _isOperation = Operations.isOperation(String.valueOf(op.get_operation()));
     Display.clearDisplay(displayField);
 
     if(_isOperation){
       
-      Float Result = Operations.eval(String.valueOf(op.get_operation()));
+      Float result = Operations.eval(String.valueOf(op.get_operation()));
+
       System.out.println("EXECUTADO");
-      displayField.setText(String.valueOf(Result));
+      resultField.setText(" ");
+      historico.getItems().add(ope + " = " + String.valueOf(result));
+      
+      displayField.setText(String.valueOf(result));
     } else {
       System.out.println("LIMPO");
       Display.clearDisplay(displayField);
@@ -118,15 +133,7 @@ public class calcController {
 
   }
 
-  public void clearDisplay(ActionEvent event){
-    Display.clearDisplay(displayField);
-  }
-  
-  public void clearLastPositionDisplay(ActionEvent event){
-    String newDisplay = displayField.getText();
-    newDisplay = newDisplay.substring(0, newDisplay.length() -1);
-    displayField.setText(newDisplay);
-  }
+
 
 }
 
